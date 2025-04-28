@@ -1,0 +1,106 @@
+.login-container {
+  max-width: 360px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  background-color: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container::before {
+  content: "🐾";
+  font-size: 60px;
+  opacity: 0.08;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  transform: rotate(-20deg);
+}
+
+h2 {
+  text-align: center;
+  color: #6c5ce7;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 12px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fcfcfc;
+  transition: border-color 0.3s ease;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #2d3436;
+}
+
+
+
+
+input:focus {
+  border-color: #a29bfe;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(162, 155, 254, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px; 
+  background-color: #fd79a8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+
+button:hover:not(:disabled) {
+  background-color: #e84393;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background-color: #dfe6e9;
+  color: #636e72;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d63031;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.error-message {
+  background-color: #ffe6e6;
+  border: 1px solid #fab1a0;
+  color: #d63031;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  text-align: center;
+}

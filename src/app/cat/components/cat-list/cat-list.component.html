@@ -1,0 +1,17 @@
+<div class="cat-list">
+  <div class="cat-card" *ngFor="let cat of cats">
+    <div class="cat-info">
+      <h3>{{ cat.name }}</h3>
+      <p>Nickname: {{ cat.nickName }}</p>
+      <p>Age: {{ cat.age }}</p>
+      <p>Type: {{ cat.type }}</p>
+      <p [style.color]="cat.isCatHappy ? '#44bd32' : '#d63031'">
+        {{ cat.isCatHappy ? 'Happy 😺' : 'Grumpy 😾' }}
+      </p>
+    </div>
+    <div class="cat-actions">
+      <button (click)="editCat(cat.id)">Edit</button>
+      <button (click)="deleteCat(cat.id)">Delete</button>
+    </div>
+  </div>
+</div>
